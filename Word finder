@@ -1,8 +1,8 @@
 import re
 def finder(word):
-    tweets = open(##path to file##).readlines()
+    stuff = open(##path to file##).readlines()
     car = 0
-    for i in tweets:
+    for i in stuff:
         o = re.compile(word)
         f = o.findall(i)
         for g in f:
