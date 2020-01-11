@@ -1,6 +1,5 @@
 import random, sys
-go = True
-while go == True:
+while True:
     coin = ["heads", "tails"]
     toss = 1
     flips = input("How many times do you want to flip?" + "\n")
