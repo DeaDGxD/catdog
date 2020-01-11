@@ -10,7 +10,7 @@ while go == True:
             result = random.choice(coin)
             results += result
             toss += 1
-            print(toss)
+            print(result)
     except ValueError:
         if flips == "":
             print("You need to enter a value.")
