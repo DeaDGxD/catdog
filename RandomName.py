@@ -4,7 +4,7 @@ name = ["Mary","Patricia","Jennifer","Linda","Elizabeth","Barbara","Susan","Jess
 #top 100 Last names
 lastName = ["Smith","Johnson","Williams","Jones","Brown","Davis","Miller","Wilson","Moore","Taylor","Anderson","Thomas","Jackson","White","Harris","Martin","Thompson","Garcia","Martinez","Robinson","Clark","Rodriguez","Lewis","Lee","Walker","Hall","Allen","Young","Hernandez","King","Wright","Lopez","Hill","Scott","Green","Adams","Baker","Gonzalez","Nelson","Carter","Mitchell","Perez","Roberts","Turner","Phillips","Campbell","Parker","Evans","Edwards","Collins","Stewart","Sanchez","Morris","Rogers","Reed","Cook","Morgan","Bell","Murphy","Bailey","Rivera","Cooper","Richardson","Cox","Howard","Ward","Torres","Peterson","Gray","Ramirez","James","Watson","Brooks","Kelly","Sanders","Price","Bennett","Wood","Barnes","Ross","Henderson","Coleman","Jenkins","Perry","Powell","Long","Patterson","Hughes","Flores","Washington","Butler","Simmons","Foster","Gonzales","Bryan","Alexander","Russell","Griffin","Diaz","Hayes"]
 cat = True
-names = []
+names = set({})
 trash = 0
 while cat:
     if trash < 300000:
@@ -14,7 +14,7 @@ while cat:
         cat += 1
         car = namey
         if str(car) not in names:
-            names.append(str(car))
+            names.add(str(car))
             trash = 0
         else:
             trash += 1
@@ -22,4 +22,3 @@ while cat:
         break
 name = set(names)
 print(len(names))
-print(len(set(names)))
